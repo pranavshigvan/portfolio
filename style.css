@@ -6,7 +6,7 @@
 }
 @font-face {
     font-family: "newYork";
-    src: url("./FontsFree-Net-NewYork.ttf");
+    src: url("./asset/FontsFree-Net-NewYork.ttf");
 }
 body {
     width: 100%;
@@ -38,7 +38,7 @@ body {
     z-index: 100;
     
 }
-.nav a {
+.nav .link {
     color: #f1f1f1;
     text-decoration: none;
     margin: 0 ;
@@ -58,6 +58,7 @@ body {
     border: 1px solid #f1f1f1;
     background-color: transparent;
     color: #f1f1f1;
+    text-decoration: none;
 }
 
 .main {
@@ -307,11 +308,17 @@ body {
     body {
         padding: 0;
     }
+    .random_text {
+        width: 80%;
+    }
     /* .container {
         padding: 25px;
     } */
 }
 @media (max-width:600px ) {
+    p {
+        font-size: 18px;
+    }
     .container {
         padding: 25px;
     }
@@ -321,9 +328,15 @@ body {
     .icons {
         grid-template-columns: repeat(3,1fr);
     }
+    .projects_container{
+        grid-template-columns: 1fr;
+    }
+    .project {
+        max-width: 400px;
+    }
     .icon i{
         transform: scale(1.6);
-        margin: 20px;
+        margin: 20px 20px 35px;
     }
     .random_text {
         width: 100%;
