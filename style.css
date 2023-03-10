@@ -9,7 +9,7 @@
     src: url("./asset/FontsFree-Net-NewYork.ttf");
 }
 body {
-    width: 100%;
+    width: 100vw;
     height: 100%;
     padding: 0 10vw;
     background-color: black;
@@ -22,6 +22,7 @@ body {
     width: 100%;
     height: 100%;
     position: relative;
+    padding-bottom: 50px;
 }
 .nav {
     display: flex;
@@ -284,6 +285,9 @@ body {
     font-size: 3vw;
     font-family: 'Lato', sans-serif;
 }
+.outro {
+    padding: 50px 0;
+}
 .outro p{
     font-size: 4vw;
     font-family: "newYork";
@@ -311,9 +315,9 @@ body {
     .random_text {
         width: 80%;
     }
-    /* .container {
-        padding: 25px;
-    } */
+    .container {
+        width: 100%;
+    }
 }
 @media (max-width:600px ) {
     p {
@@ -348,13 +352,31 @@ body {
         flex-basis: 30px;
     }
     .circle {
-        transform: scale(2);
+        display: none;
     }
     .title {
         font-size: 20px;
     }
     .main h1 {
         font-size: 30px;
+        animation: none;
+    }
+    .main h1:nth-child(2){
+        margin-left: 0;
+        
+    }
+    .main .second {
+        text-align: center;
+        width: 100%;
+        display: block;
+        position: absolute;
+    }
+    .main .first {
+        text-align: center;
+        left: 50%;
+        position: relative;
+        display: block;
+        transform: translateX(-50%);
     }
     .sliding_text > div{
         font-size: 20px;
